@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Set position to relative */
+    background-image: url('https://wallpapers.com/images/high/light-color-background-nap5kv1drli0yv65.webp');
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send the background image to the back */
+    background-image: url('https://www.businesswest.co.uk/sites/default/files/styles/event_image/public/blog/featured/bus_planning.jpg?itok=nhnFfZOG');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Apply blur effect */
+    opacity: 0.5; /* Reduce opacity */
+}
+
+.container {
+    position: absolute; /* Set position to absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure the form is above the blurred background */
+}
+
+.column {
+    width: 45%;
+    display: inline-block; /* Set display to inline-block */
+    vertical-align: top; /* Align columns to the top */
+    margin-right: 5%; /* Add some space between columns */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: calc(100% - 20px); /* Adjust input width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.result h2 {
+    margin: 0;
+    font-size: 18px;
+}

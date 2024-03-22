@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plan Classification</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app1.css">
+    <style>
+        .form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .form-column {
+            width: 48%;
+        }
+        .form-column h2, .form-column select, .form-column input[type="text"] {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+    <div class="form-column">
+        <h2>Marketing Budget</h2>
+        <input class="marketing-budget" type="text" id="uiMarketingBudget" class="floatLabel" name="MarketingBudget" value="50000">
+        <h2>Customer Acquisition Cost</h2>
+        <input class="customer-acquisition-cost" type="text" id="uiCustomerAcquisitionCost" class="floatLabel" name="CustomerAcquisitionCost" value="1000">
+        <h2>Market Trend</h2>
+        <select class="market-trend" id="uiMarketTrend">
+            <option value="sample value1" selected>Sample Value 1</option>
+        </select>
+        <h2>Sales Channel</h2>
+        <select class="sales-channel" id="uiSalesChannel">
+            <option value="sample value1" selected>Sample Value 1</option>
+        </select>
+        <h2>Product Type</h2>
+        <select class="product-type" id="uiProductType">
+            <option value="sample value1" selected>Sample Value 1</option>
+        </select>
+        <h2>Customer Base</h2>
+        <select class="customer-base" id="uiCustomerBase">
+            <option value="sample value1" selected>Sample Value 1</option>
+        </select>
+    </div>
+    <div class="form-column">
+        <h2>Competitor</h2>
+        <select class="competitor" id="uiCompetitor">
+            <option value="sample value1" selected>Sample Value 1</option>
+        </select>
+        <h2>Marketing Campaign</h2>
+        <select class="marketing-campaign" id="uiMarketingCampaign">
+            <option value="sample value1" selected>Sample Value 1</option>
+        </select>
+        <h2>Financial Health</h2>
+        <select class="financial-health" id="uiFinancialHealth">
+            <option value="sample value1" selected>Sample Value 1</option>
+        </select>
+        <h2>Employee Performance</h2>
+        <select class="employee-performance" id="uiEmployeePerformance">
+            <option value="sample value1" selected>Sample Value 1</option>
+        </select>
+        <h2>Investment Funding</h2>
+        <select class="investment-funding" id="uiInvestmentFunding">
+            <option value="sample value1" selected>Sample Value 1</option>
+        </select>
+        <h2>Customer Feedback</h2>
+        <select class="customer-feedback" id="uiCustomerFeedback">
+            <option value="sample value1" selected>Sample Value 1</option>
+        </select>
+    </div>
+</form>
+<button class="submit" onclick="onClickedClassifyPlan()" type="button">Classify Plan</button>
+<div id="uiClassifyPlan" class="result"> <h2></h2> </div>
+</body>
+</html>
